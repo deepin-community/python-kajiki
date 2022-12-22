@@ -1,0 +1,56 @@
+Source: python-kajiki
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders:
+ TANIGUCHI Takaki <takaki@debian.org>,
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all (>= 3.2),
+ python3-babel,
+ python3-nine,
+ python3-nose,
+ python3-setuptools,
+ python3-sphinx,
+Standards-Version: 4.6.0
+Homepage: http://sourceforge.net/p/kajiki/home/
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-kajiki.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-kajiki
+
+Package: python-kajiki-doc
+Architecture: all
+Section: doc
+Depends:
+ ${misc:Depends},
+ ${sphinxdoc:Depends},
+Provides:
+ ${python3:Provides},
+Multi-Arch: foreign
+Description: Really fast well-formed xml templates - doc
+ Are you tired of the slow performance of Genshi? But you still long for the
+ assurance that your output is well-formed that you miss from all those other
+ templating engines? Do you wish you had Jinja's blocks with Genshi's syntax?
+ Then look  no further, Kajiki is for you! Kajiki quickly compiles Genshi-like
+ syntax to *real Python bytecode* that renders with blazing-fast speed! Don't
+ delay! Pick up your copy of Kajiki today!
+ .
+ This package provides the documentation.
+
+Package: python3-kajiki
+Architecture: all
+Depends:
+ python3-pkg-resources,
+ ${misc:Depends},
+ ${python3:Depends},
+Provides:
+ ${python3:Provides},
+Description: Really fast well-formed xml templates - Python 3.x
+ Are you tired of the slow performance of Genshi? But you still long for the
+ assurance that your output is well-formed that you miss from all those other
+ templating engines? Do you wish you had Jinja's blocks with Genshi's syntax?
+ Then look  no further, Kajiki is for you! Kajiki quickly compiles Genshi-like
+ syntax to *real Python bytecode* that renders with blazing-fast speed! Don't
+ delay! Pick up your copy of Kajiki today!
+ .
+ This package provides the Python 3.x module.

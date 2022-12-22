@@ -1,0 +1,215 @@
+python-kajiki (0.8.3-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ TANIGUCHI Takaki ]
+  * d/watch: Follow upstream URL change.
+  * New upstream version 0.8.3
+  * Bump Standards-Version to 4.6.0
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Tue, 14 Sep 2021 12:53:51 +0900
+
+python-kajiki (0.8.2-1) unstable; urgency=medium
+
+  * New upstream version 0.8.2
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Thu, 12 Dec 2019 19:38:14 +0900
+
+python-kajiki (0.8.1-1) unstable; urgency=medium
+
+  * New upstream version 0.8.1
+  * Add a CI config file.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Fri, 25 Oct 2019 15:46:50 +0900
+
+python-kajiki (0.8.0-2) unstable; urgency=medium
+
+  * Set upstream metadata fields: Repository.
+  * Bump Standards-Version to 4.4.1
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 30 Sep 2019 17:34:16 +0900
+
+python-kajiki (0.8.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Convert git repository from git-dpm to gbp layout
+  * Use 'python3 -m sphinx' instead of sphinx-build for building docs
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Chris Lamb ]
+  * Remove trailing whitespaces.
+
+  [ TANIGUCHI Takaki ]
+  * Bump Standards-Version 4.4.0
+  * debian-compat: Bump to 12
+  * Drop python2 support
+  * New upstream version 0.8.0
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Tue, 30 Jul 2019 18:33:38 +0900
+
+python-kajiki (0.7.2-1) unstable; urgency=medium
+
+  * New upstream version 0.7.2
+  * Bump Stanrads-Version to 4.1.4
+  * d/control: Add Muilt-arch hint.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 14 May 2018 20:36:00 +0900
+
+python-kajiki (0.7.1-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/watch: Use https protocol
+  * d/changelog: Remove trailing whitespaces
+
+  [ Thomas Goirand ]
+  * Team upload.
+  * Ran wrap-and-sort -bast.
+  * Add missing python{3,}-pkg-resources runtime depends
+    (Closes: #896356, #896332).
+
+ -- Thomas Goirand <zigo@debian.org>  Sat, 28 Apr 2018 19:44:06 +0000
+
+python-kajiki (0.7.1-1) unstable; urgency=medium
+
+  * New upstream version 0.7.1
+  * Bump Standards-Vertion to 4.1.3
+  * debian/compat: 11
+  * debian/control:
+    - Add dh-python and python3-sphinx to B-D.
+    - Change priority extra to optional.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Sat, 03 Feb 2018 22:02:11 +0900
+
+python-kajiki (0.7.0-1) unstable; urgency=medium
+
+  * New upstream version 0.7.0
+  * debian/compat: Bump to 10
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Fri, 30 Jun 2017 18:01:38 +0900
+
+python-kajiki (0.6.3-1) unstable; urgency=medium
+
+  * New upstream version 0.6.3
+  * Bump Standards-Version to 4.0.0 (without changes)
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Tue, 27 Jun 2017 18:27:30 +0900
+
+python-kajiki (0.6.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ TANIGUCHI Takaki ]
+  * New upstream version 0.6.1
+  * debian/compat: Bump to 9.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Thu, 02 Feb 2017 18:28:24 +0900
+
+python-kajiki (0.5.5-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standard Version.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Tue, 11 Oct 2016 13:06:12 +0900
+
+python-kajiki (0.5.3-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.5.3
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Tue, 02 Feb 2016 16:21:11 +0900
+
+python-kajiki (0.5.2-2) unstable; urgency=medium
+
+  * debian/rules: Switch to pybuild and clean up.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Wed, 25 Nov 2015 23:10:58 +0900
+
+python-kajiki (0.5.2-1) unstable; urgency=medium
+
+  [ TANIGUCHI Takaki ]
+  * debian/watch: Use pypy.debian.net.
+  * Imported Upstream version 0.5.2
+  * Bump Standards-Version 3.9.6.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Wed, 25 Nov 2015 22:57:25 +0900
+
+python-kajiki (0.4.4-2) unstable; urgency=medium
+
+  * Team upload.
+  * Added Python3 support.
+  * Ran wrap-and-sort.
+  * Standards-Version: is now 3.9.5.
+  * Now packaging the sphinx doc in a python-kajiki-doc package.
+  * Cleans correctly so the package can be built twice.
+  * Runs the unit test at build time.
+
+ -- Thomas Goirand <zigo@debian.org>  Sun, 02 Mar 2014 10:11:58 +0000
+
+python-kajiki (0.4.4-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 07 Oct 2013 16:37:25 +0900
+
+python-kajiki (0.4.3-1) unstable; urgency=low
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+  [ TANIGUCHI Takaki ]
+  * New upstream release
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 19 Aug 2013 16:22:39 +0900
+
+python-kajiki (0.3.5-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Thu, 10 May 2012 09:59:52 +0900
+
+python-kajiki (0.3.4-2) unstable; urgency=low
+
+  [ Jakub Wilk ]
+  * Add Vcs-* fields.
+
+  [ TANIGUCHI Takaki ]
+  * debian/source/options: Ignore egg-file changes. (Closes: #671327)
+  * Bump Standards-Version to 3.9.3
+    + debian/copyright: copyright-format 1.0
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Wed, 09 May 2012 21:27:13 +0900
+
+python-kajiki (0.3.4-1) unstable; urgency=low
+
+  * New upstream release
+  * copyright: DEP-5
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 20 Jun 2011 10:43:50 +0900
+
+python-kajiki (0.3.2-2) unstable; urgency=low
+
+  * Switch to dh_python2.
+  * Bump Standards-Version to 3.9.2 (with no changes).
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 23 May 2011 12:37:36 +0900
+
+python-kajiki (0.3.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #605693)
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Thu, 02 Dec 2010 17:29:50 +0900
