@@ -1,7 +1,3 @@
-.. testsetup:: *
-
-   import kajiki
-
 Kajiki Templating Basics
 =================================
 
@@ -109,6 +105,7 @@ text-based languages), the pattern is as follows:
 
 For instance:
 
+>>> import kajiki
 >>> Template = kajiki.XMLTemplate('<h1>Hello, $name!</h1>')
 >>> t = Template(dict(name='world'))
 >>> t.render()
@@ -126,7 +123,7 @@ Using a template loader gives two main advantages over directly instantiating
 templates:
 
  * Compiled templates are cached and only re-parsed when the template changes.
- * Several template tags such as `extends`, `import`, and `include` that require knowlege of other templates become enabled.
+ * Several template tags such as `extends`, `import`, and `include` that require knowledge of other templates become enabled.
 
 Using a template loader would look similar to the following::
 

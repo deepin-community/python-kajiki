@@ -1,6 +1,38 @@
 CHANGES
 =======
 
+0.9.2 (2022-11-24)
+------------------
+
+* Python 3.11 compatibility.
+* Documentation updates and clarifications.
+* Unit test updates.
+
+0.9.1 (2022-04-20)
+------------------
+
+* Fixed compatibility for Python 3.11 alpha.
+* The unit tests were moved out of the ``kajiki`` package: tests are
+  now under the ``tests/`` directory.
+* Migrated from Travis CI to GitHub Actions.
+
+0.9.0 (2021-11-29)
+------------------
+
+* Support dropped for Python 2.7.
+* Fixed up lnotab bugs in Python 3.6+ (``ERROR LOOKING UP LINE``
+  messages).
+* DTD will not be inserted before an ``<?xml ...?>`` declaration
+  anymore.
+* Dependency on ``nine`` dropped.
+* Dropped integration for TurboGears 1.
+* Improved end-to-end testing.
+
+.. note::
+
+   Kajiki 0.9.x will be the last series to support Python 3.4 and 3.5.
+   Users are encouraged to upgrade to Python 3.6+ soon.
+
 0.8.3 (2021-06-18)
 ------------------
 
