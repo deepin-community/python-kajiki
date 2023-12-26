@@ -1,7 +1,3 @@
-.. testsetup:: *
-
-   import kajiki
-
 ==================================
 Kajiki XML Templates
 ==================================
@@ -36,23 +32,28 @@ template to determine how to render:
 ...         </form>
 ...     </body>
 ... </html>'''
+>>> import kajiki
 >>> Template = kajiki.XMLTemplate(tpl_text)
 >>> print(Template().render().strip())
-<!DOCTYPE html><html>
-    <head><!--  Some stuff here  -->
+<!DOCTYPE html>
+<html>
+    <head><!--  Some stuff here  --></head>
     <body>
         <form>
             <input checked type="checkbox">
             <select>
-                <option selected>One
-                <option>Two
-                <option>Three
+                <option selected>One</option>
+                <option>Two</option>
+                <option>Three</option>
             </select>
         </form>
+    </body>
+</html>
 >>> # If we want to override the detected type, we can pass a 'mode' param
 >>> Template = kajiki.XMLTemplate(tpl_text, mode='xml')
 >>> print(Template().render().strip())
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
     <head><!--  Some stuff here  --></head>
     <body>
         <form>
@@ -454,6 +455,30 @@ child.id() = <span>mid</span>
 </div>
 <h6>Footer</h6>
 </div>
+
+Summary of Directives
+=====================
+
+========== ======================  ============================ ==========================================================
+Directive  Usable as an attribute  Usable as a separate element When used as a separate element, requires attributes named
+========== ======================  ============================ ==========================================================
+py:if      ✅                       ✅                            test
+py:else    ✅                       ✅
+py:switch  ❌                       ✅                            test
+py:case    ✅                       ✅                            value
+py:for     ✅                       ✅                            each
+py:def     ✅                       ✅                            function
+py:call    ❌                       ✅                            args, function
+py:include ❌                       ✅                            href
+py:import  ❌                       ✅                            href
+py:with    ✅                       ✅                            vars
+py:attrs   ✅                       ❌
+py:strip   ✅                       ❌
+py:content ✅                       ❌
+py:replace ✅                       ✅                            value
+py:extends ❌                       ✅                            href
+py:block   ✅                       ✅                            name
+========== ======================  ============================ ==========================================================
 
 Built-in functions
 ==================

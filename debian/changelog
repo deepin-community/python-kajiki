@@ -1,3 +1,37 @@
+python-kajiki (0.9.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * Update d/watch to fetch from Github
+  * New upstream version 0.9.2
+    - Fix Python 3.11 compatibility (Closes: #1026705)
+  * Add new build-depend on python3-linetable
+  * Bump Standards-Version to 4.6.2
+  * Use dh-sequence-{python3,sphinxdoc} instead of --with python3,sphinxdoc
+  * Use autopkgtest-pkg-pybuild
+  * Fix nodoc support in d/rules
+  * Use pytest instead of nose (Closes: #1018522)
+  * Drop obsolete d/source/options
+  * Add override for Lintian false positive source-is-missing
+  * Use ${source:*} placeholders for less redundancy in d/control
+  * Update d/upstream/metadata
+  * Clean *.egg-info
+
+ -- Timo Röhling <roehling@debian.org>  Fri, 30 Dec 2022 10:12:56 +0100
+
+python-kajiki (0.9.1-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster
+
+  [ TANIGUCHI Takaki ]
+  * New upstream version 0.9.0
+  * d/control: Drop python-nine from B-D.
+  * d/control: Update Homepage URL
+  * New upstream version 0.9.1
+  * Bump Standards-Version to 4.6.1
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 04 Jul 2022 10:34:05 +0900
+
 python-kajiki (0.8.3-1) unstable; urgency=medium
 
   [ Debian Janitor ]

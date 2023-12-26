@@ -1,0 +1,2 @@
+# false positive, this is the expected output generated from tests/data/kitchensink.html
+python-kajiki source: source-is-missing [tests/data/golden/kitchensink1.html]

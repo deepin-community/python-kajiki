@@ -1,2 +1,4 @@
-version=3
-https://pypi.debian.net/kajiki/kajiki-(.*)\.tar\.gz
+version=4
+opts="mode=git,uversionmangle=s/(a|b|r?c)/~$1/" \
+ https://github.com/jackrosenthal/kajiki refs/tags/v(\d[\dabrc.]+)
+
